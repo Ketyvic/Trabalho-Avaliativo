@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt"> 
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Cadastro de Lista Telefônica</title> 
+    <link rel="stylesheet" href="index.css"> 
+</head>
+
+<body>
+    <div class="formulario-contato">
+        <label for="input_nome">Nome de Contato</label>
+        <input type="text" id="input_nome" />
+    
+        <label for="input_telefone_principal">Telefone Principal</label>
+        <input type="tel" id="input_telefone_principal" />
+
+        <label for="input_telefone_secundario">Telefone Secundário</label>
+        <input type="tel" id="input_telefone_secundario" />
+
+    
+        <button id="botao_adicionar">Adicionar Contato</button>
+    </div>
+    
+
+    <!-- Tabela que exibirá os contatos cadastrados -->
+    <table id="tabela_contatos">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Telefone Principal</th>
+                <th>Telefone Secundário</th>
+            </tr>
+        </thead>
+        <tbody></tbody> <!-- Onde as linhas dos contatos serão inseridas -->
+    </table>
+
+    <script src="index.js"></script> <!-- Importa o JavaScript -->
+</body>
+
+</html>
